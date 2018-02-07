@@ -1,0 +1,34 @@
+From ba33dbcff6746b988a58e38d4f72e52364f0ba79 Mon Sep 17 00:00:00 2001
+From: Nathaniel Flath <flat0103@gmail.com>
+Date: Thu, 3 Mar 2016 22:26:12 -0800
+Subject: [PATCH] Remove global-set-key
+
+---
+ sudo-edit.el | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/sudo-edit.el b/sudo-edit.el
+index 24c2e50..fe72d33 100644
+--- a/sudo-edit.el
++++ b/sudo-edit.el
+@@ -15,6 +15,9 @@
+ ;; sudo-edit
+ ;; sudo-edit-current-file
+ 
++;; Suggested keybinding:
++;; (global-set-key (kbd "C-c C-r") 'sudo-edit-current-file)
++
+ ;;; Installation
+ 
+ ;; To use this mode, put the following in your init.el:
+@@ -53,7 +56,5 @@
+     (find-alternate-file (concat "/sudo:root@localhost:" (buffer-file-name (current-buffer))))
+     (goto-char pos)))
+ 
+-(global-set-key (kbd "C-c C-r") 'sudo-edit-current-file)
+-
+ (provide 'sudo-edit)
+ ;;; sudo-edit.el ends here
+--
+Working Copy 3.2.6
+
