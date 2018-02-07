@@ -1,0 +1,1387 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-521cbf980c80.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-b028b0565d07.css" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-e1e1bc98a53e.css" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>GitHub - automerge/automerge: A JSON-like data structure that can be modified concurrently by different users, and merged again automatically.</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta content="https://avatars0.githubusercontent.com/u/29780209?s=400&amp;v=4" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="automerge/automerge" property="og:title" /><meta content="https://github.com/automerge/automerge" property="og:url" /><meta content="automerge - A JSON-like data structure that can be modified concurrently by different users, and merged again automatically." property="og:description" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="A667:23DE:BD9A73:145C408:5A7B3169" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="A667:23DE:BD9A73:145C408:5A7B3169" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
+<meta content="https://github.com/hydro_browser_events" name="hydro-events-url" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ZGU5NWMxNzliMTc0MTgyNmI1MGU4Mzk1NTAzNDIwZjY4M2JkMDQ2ZDA1OWY2MDNkMTJlOTY4YjI5N2M3ZTg0NHx7InJlbW90ZV9hZGRyZXNzIjoiMTcyLjU2LjEyLjEyMiIsInJlcXVlc3RfaWQiOiJBNjY3OjIzREU6QkQ5QTczOjE0NUM0MDg6NUE3QjMxNjkiLCJ0aW1lc3RhbXAiOjE1MTgwMjMwMTgsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_HERO_CARD_UPLOADER">
+
+  <meta name="html-safe-nonce" content="e24302309050623895badcc8d19b52d683fbbc17">
+
+  <meta http-equiv="x-pjax-version" content="2bf51fd7082408c30b9f7c187424cdec">
+  
+
+      <link href="https://github.com/automerge/automerge/commits/master.atom" rel="alternate" title="Recent Commits to automerge:master" type="application/atom+xml">
+
+  <meta name="description" content="automerge - A JSON-like data structure that can be modified concurrently by different users, and merged again automatically.">
+  <meta name="go-import" content="github.com/automerge/automerge git https://github.com/automerge/automerge.git">
+
+  <meta content="29780209" name="octolytics-dimension-user_id" /><meta content="automerge" name="octolytics-dimension-user_login" /><meta content="88760614" name="octolytics-dimension-repository_id" /><meta content="automerge/automerge" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="88760614" name="octolytics-dimension-repository_network_root_id" /><meta content="automerge/automerge" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+
+
+    <link rel="canonical" href="https://github.com/automerge/automerge" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+  </head>
+
+  <body class="logged-out env-production">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
+  <div class="container-lg d-flex px-3">
+    <div class="d-flex flex-justify-between flex-items-center">
+      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
+        <nav class="mt-0">
+          <ul class="d-flex list-style-none">
+              <li class="ml-2">
+                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
+                  Features
+</a>              </li>
+              <li class="ml-4">
+                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
+                  Business
+</a>              </li>
+
+              <li class="ml-4">
+                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
+                  Explore
+</a>              </li>
+
+              <li class="ml-4">
+                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
+                      Marketplace
+</a>              </li>
+              <li class="ml-4">
+                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
+                  Pricing
+</a>              </li>
+          </ul>
+        </nav>
+
+      <div class="d-flex">
+          <div class="d-lg-flex flex-items-center mr-3">
+            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/automerge/automerge/search" class="js-site-search-form" data-scoped-search-url="/automerge/automerge/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+        <a href="/automerge/automerge" class="header-search-scope no-underline">This repository</a>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+          </div>
+
+        <span class="d-inline-block">
+            <div class="HeaderNavlink px-0 py-2 m-0">
+              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fautomerge%2Fautomerge" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+                <span class="text-gray">or</span>
+                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+            </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fautomerge%2Fautomerge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/automerge/automerge/watchers"
+     aria-label="76 users are watching this repository">
+    76
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fautomerge%2Fautomerge"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/automerge/automerge/stargazers"
+      aria-label="2857 users starred this repository">
+      2,857
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fautomerge%2Fautomerge"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/automerge/automerge/network" class="social-count"
+       aria-label="64 users forked this repository">
+      64
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/automerge" class="url fn" rel="author">automerge</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/automerge/automerge" data-pjax="#js-repo-pjax-container">automerge</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/automerge/automerge" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /automerge/automerge" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/automerge/automerge/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /automerge/automerge/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">9</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/automerge/automerge/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /automerge/automerge/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/automerge/automerge/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /automerge/automerge/projects">
+      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a href="/automerge/automerge/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /automerge/automerge/pulse">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+      <div class="signup-prompt-bg rounded-1">
+      <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class="position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/site/dismiss_signup_prompt" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="pqPFbQnEXJRsNWKxyYd5p14Tkfve88/yuxj5Ki8Y5WAl+QO9+xNg0heyiIWmMzsagIra3XzsbmI4cEg/JlTpmA==" /></div>
+            <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>
+          <h3 class="pt-2">Join GitHub today</h3>
+          <p class="col-6 mx-auto">GitHub is home to over 20 million developers working together to host and review code, manage projects, and build software together.</p>
+          <p class="pb-2">
+            <a class="btn btn-blue" href="/join?source=prompt-code" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="js-repo-meta-container">
+  <div class="repository-meta mb-0 mb-3 js-repo-meta-edit js-details-container ">
+    <div class="repository-meta-content col-11 mb-1">
+          <span class="col-11 text-gray-dark mr-2" itemprop="about">
+            A JSON-like data structure that can be modified concurrently by different users, and merged again automatically.
+          </span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax href="/automerge/automerge/commits/master">
+              <svg aria-hidden="true" class="octicon octicon-history" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"/></svg>
+              <span class="num text-emphasized">
+                183
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax href="/automerge/automerge/branches">
+            <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            <span class="num text-emphasized">
+              3
+            </span>
+            branches
+          </a>
+        </li>
+
+        <li>
+          <a href="/automerge/automerge/releases">
+            <svg aria-hidden="true" class="octicon octicon-tag" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"/></svg>
+            <span class="num text-emphasized">
+              8
+            </span>
+            releases
+          </a>
+        </li>
+
+        <li>
+            <a href="/automerge/automerge/graphs/contributors">
+  <svg aria-hidden="true" class="octicon octicon-organization" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4"/></svg>
+    <span class="num text-emphasized">
+      8
+    </span>
+    contributors
+</a>
+
+        </li>
+          <li>
+            <a href="/automerge/automerge/blob/master/LICENSE">
+              <svg aria-hidden="true" class="octicon octicon-law" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>
+                MIT
+            </a>
+          </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="/automerge/automerge/search?l=javascript"  data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                  <span class="lang">JavaScript</span>
+                  <span class="percent">100.0%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="JavaScript 100.0%" style="width:100.0%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+    </div>
+
+
+
+  <div class="file-navigation in-mid-page">
+
+    <details class="get-repo-select-menu js-menu-container float-right position-relative dropdown-details details-reset">
+  <summary class="btn btn-sm btn-primary">
+    Clone or download
+    <span class="dropdown-caret"></span>
+  </summary>
+  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container ">
+        <div class="clone-options https-clone-options">
+
+          <h4 class="mb-1">
+            Clone with HTTPS
+            <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+              <svg aria-hidden="true" class="octicon octicon-question" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></svg>
+            </a>
+          </h4>
+          <p class="mb-2 get-repo-decription-text">
+            Use Git or checkout with SVN using the web URL.
+          </p>
+
+          <div class="input-group js-zeroclipboard-container">
+  <input type="text" class="form-control input-monospace input-sm js-zeroclipboard-target js-url-field" value="https://github.com/automerge/automerge.git" aria-label="Clone this repository at https://github.com/automerge/automerge.git" readonly>
+  <div class="input-group-button">
+    <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg></button>
+  </div>
+</div>
+
+        </div>
+
+      <div class="mt-2">
+        
+<a href="/automerge/automerge/archive/master.zip"
+   class="btn btn-outline get-repo-btn
+"
+   rel="nofollow"
+   data-ga-click="Repository, download zip, location:repo overview">
+  Download ZIP
+</a>
+
+      </div>
+    </div>
+  </div>
+</details>
+
+
+  <div class="BtnGroup float-right">
+
+    <a href="/automerge/automerge/find/master"
+      class="btn btn-sm empty-icon float-right BtnGroup-item"
+      data-pjax
+      data-hotkey="t"
+      data-ga-click="Repository, find file, location:repo overview">
+      Find file
+    </a>
+  </div>
+
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/automerge/automerge/tree/hypermerge-support"
+               data-name="hypermerge-support"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                hypermerge-support
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/automerge/automerge/tree/immutable-api"
+               data-name="immutable-api"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                immutable-api
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/automerge/automerge/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.6.0"
+              data-name="v0.6.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.0">
+                v0.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.5.0"
+              data-name="v0.5.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.0">
+                v0.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.4.3"
+              data-name="v0.4.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.3">
+                v0.4.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.4.2"
+              data-name="v0.4.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.2">
+                v0.4.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.4.1"
+              data-name="v0.4.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.1">
+                v0.4.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.4.0"
+              data-name="v0.4.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.0">
+                v0.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.3.0"
+              data-name="v0.3.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.0">
+                v0.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/automerge/automerge/tree/v0.2.0"
+              data-name="v0.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.2.0">
+                v0.2.0
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        <button type="button" class="btn btn-sm disabled tooltipped tooltipped-n new-pull-request-btn" aria-label="You must be signed in to create a pull request">
+          New pull request
+        </button>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details">
+    <span class="float-right">
+      Latest commit
+      <a class="commit-tease-sha" href="/automerge/automerge/commit/9fa929407b1f2acb268f8c2ea271a1c0ef44169a" data-pjax>
+        9fa9294
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2018-02-06T13:35:58Z">Feb 6, 2018</relative-time></span>
+    </span>
+
+
+      <span class="commit-author-section">
+          <a href="/ept" class="d-inline-block">
+            <img src="https://avatars0.githubusercontent.com/u/27544?s=40&amp;v=4" width="20" height="20" class="avatar avatar-small" alt="@ept">
+          </a>
+        
+  <a href="/ept" class="user-mention">ept</a>
+
+      </span>
+
+      <a href="/automerge/automerge/commit/9fa929407b1f2acb268f8c2ea271a1c0ef44169a" class="message" data-pjax="true" title="Merge pull request #49 from ordepdev/master
+
+Replace several empty guids for ROOT_ID constant">Merge pull request</a> <a href="https://github.com/automerge/automerge/pull/49" class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="294486441" data-permission-text="Issue title is private" data-url="https://github.com/automerge/automerge/issues/49">#49</a> <a href="/automerge/automerge/commit/9fa929407b1f2acb268f8c2ea271a1c0ef44169a" class="message" data-pjax="true" title="Merge pull request #49 from ordepdev/master
+
+Replace several empty guids for ROOT_ID constant">from ordepdev/master</a>
+        <span class="hidden-text-expander inline">
+          <button type="button" class="ellipsis-expander js-details-target" aria-expanded="false">&hellip;</button>
+        </span>
+
+      <div class="commit-desc"><pre class="text-small">Replace several empty guids for ROOT_ID constant</pre></div>
+
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a href="/automerge/automerge/tree/9fa929407b1f2acb268f8c2ea271a1c0ef44169a" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/tree/master/src" class="js-navigation-open" id="25d902c24283ab8cfbac54dfa101ad31-7a41a684a175c51960f45deebf0324217f9bf232" title="src">src</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/5da23d20439629b5a0ab53f07d6f1a0bf211bf6a" class="message" data-pjax="true" title="Expose conflicts on list objects">Expose conflicts on list objects</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-17T16:43:04Z">Jan 17, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/tree/master/test" class="js-navigation-open" id="098f6bcd4621d373cade4e832627b4f6-1ca033dff30553c921e10347c8d38c185b94daed" title="test">test</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/d0b4302abff0c3788338ae7f66107cc1be17f974" class="message" data-pjax="true" title="Replace several empty guids for ROOT_ID constant
+
+Followed the same approach from `op_set.js` and replaced
+all occurrences of &#39;00000000-0000-0000-0000-000000000000&#39;
+for a `ROOT_ID` constant.">Replace several empty guids for ROOT_ID constant</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-05T17:57:43Z">Feb 5, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/.gitignore" class="js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-c925c21d56cb741fc68c67f58e97e718bcbdde5a" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/b6f939f22ee80bcf935e9733ccabdaf117b8c79d" class="message" data-pjax="true" title="Add webpack config">Add webpack config</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-26T18:27:35Z">Jun 26, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/INTERNALS.md" class="js-navigation-open" id="3fc7c0a13cddc8a91969a6c4da159e7d-a82acc609aa1a82c21a2fa3824c99f3face6a96a" title="INTERNALS.md">INTERNALS.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/ab132c647e637e102be9f7470c866d1ab04c28bf" class="message" data-pjax="true" title="Rename &quot;changeset&quot; to &quot;change&quot; throughout">Rename "changeset" to "change" throughout</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-09-17T15:42:02Z">Sep 17, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/LICENSE" class="js-navigation-open" id="9879d6db96fd29134fc802214163b95a-25638a6b83942e17ce070c43d53b11ee5e7a4d8a" itemprop="license" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/f3105ba7a13a79aa53284eda93f68311246573bc" class="message" data-pjax="true" title="Change to MIT license">Change to MIT license</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-28T18:02:55Z">Jun 28, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/README.md" class="js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-0159fc9a059f2c16f07cc306b653c60383244da0" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/760a94e7ca2dd96871d9e83debae9082536e815c" class="message" data-pjax="true" title="baby array ] came back">baby array ] came back</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-02-06T09:14:06Z">Feb 6, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/karma.conf.js" class="js-navigation-open" id="a2a3b7b0c9c3b4b93b4aebf4e3ec3cfb-c9647acbad65f8588175c89a0b9df99a1866e438" title="karma.conf.js">karma.conf.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/3c30abc3bf54f755d8a6d2e88f696035e79797dc" class="message" data-pjax="true" title="Run tests in Chrome and Firefox">Run tests in Chrome and Firefox</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-26T20:40:59Z">Jun 26, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/package-lock.json" class="js-navigation-open" id="32607347f8126e6534ebc7ebaec4853d-76a3a6a0152f9f1875d05dd5a66276d4321e4617" title="package-lock.json">package-lock.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/e236301a54c5ea16e11693a0fb438b28835f16f1" class="message" data-pjax="true" title="0.6.0">0.6.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-12-13T20:44:43Z">Dec 13, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/package.json" class="js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-ad82a41660c0db70752e6e8052a1d2db0012c961" title="package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/e236301a54c5ea16e11693a0fb438b28835f16f1" class="message" data-pjax="true" title="0.6.0">0.6.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-12-13T20:44:43Z">Dec 13, 2017</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/automerge/automerge/blob/master/webpack.config.js" class="js-navigation-open" id="11e9f7f953edc64ba14b0cc350ae7b9d-87e77f1db7439780e0986efda471620acab6bd30" title="webpack.config.js">webpack.config.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/automerge/automerge/commit/ec16a2bce588b9ed339081c471531dbaee8c584e" class="message" data-pjax="true" title="Rename Tesseract to Automerge">Rename Tesseract to Automerge</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-06-29T17:00:03Z">Jun 29, 2017</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><h1><a href="#automerge" aria-hidden="true" class="anchor" id="user-content-automerge"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Automerge</h1>
+<p><a href="https://communityinviter.com/apps/automerge/automerge" rel="nofollow">Join the Automerge Slack community</a></p>
+<p>Automerge is a library of data structures for building collaborative applications in JavaScript.</p>
+<p>A common approach to building JavaScript apps involves keeping the state of your application in
+model objects, such as a JSON document. For example, imagine you are developing a task-tracking app
+in which each task is represented by a card. In vanilla JavaScript you might write the following:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> doc <span class="pl-k">=</span> {cards<span class="pl-k">:</span> []}
+
+<span class="pl-c"><span class="pl-c">//</span> User adds a card</span>
+<span class="pl-smi">doc</span>.<span class="pl-smi">cards</span>.<span class="pl-c1">push</span>({title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Reticulate splines<span class="pl-pds">'</span></span>, done<span class="pl-k">:</span> <span class="pl-c1">false</span>})
+
+<span class="pl-c"><span class="pl-c">//</span> User marks a task as done</span>
+<span class="pl-smi">doc</span>.<span class="pl-smi">cards</span>[<span class="pl-c1">0</span>].<span class="pl-smi">done</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>
+
+<span class="pl-c"><span class="pl-c">//</span> Save the document to disk</span>
+<span class="pl-smi">localStorage</span>.<span class="pl-c1">setItem</span>(<span class="pl-s"><span class="pl-pds">'</span>MyToDoList<span class="pl-pds">'</span></span>, <span class="pl-c1">JSON</span>.<span class="pl-c1">stringify</span>(doc))</pre></div>
+<p>Automerge is used in a similar way, but the big difference is that it supports <strong>automatic syncing
+and merging</strong>:</p>
+<ul>
+<li>
+<p>You can have a copy of the application state locally on several devices (which may belong to the
+same user, or to different users). Each user can independently update the application state on
+their local device, even while offline, and save the state to local disk.</p>
+<p>(Similar to git, which allows you to edit files and commit changes offline.)</p>
+</li>
+<li>
+<p>When a network connection is available, Automerge figures out which changes need to be synced from
+one device to another, and brings them into the same state.</p>
+<p>(Similar to git, which lets you push your own changes, and pull changes from other developers,
+when you are online.)</p>
+</li>
+<li>
+<p>If the state was concurrently changed on different devices, Automerge automatically merges the
+changes together cleanly, so that everybody ends up in the same state, and no changes are lost.</p>
+<p>(Different from git: <strong>no merge conflicts to resolve!</strong>)</p>
+</li>
+</ul>
+<h2><a href="#features-and-design-principles" aria-hidden="true" class="anchor" id="user-content-features-and-design-principles"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features and Design Principles</h2>
+<ul>
+<li><strong>Network-agnostic</strong>. Automerge is a pure data structure library that does not care what kind of
+network you use: client/server, peer-to-peer, Bluetooth, carrier pigeon, whatever, anything goes.
+Bindings to particular networking technologies are handled by separate libraries. For example, see
+<a href="https://github.com/automerge/mpl">MPL</a> for an implementation that uses Automerge in a
+peer-to-peer model using <a href="https://webrtc.org/" rel="nofollow">WebRTC</a>.</li>
+<li><strong>Immutable state</strong>. An Automerge object is an immutable snapshot of the application state at one
+point in time. Whenever you make a change, or merge in a change that came from the network, you
+get back a new state object reflecting that change. This fact makes Automerge compatible with the
+functional reactive programming style of <a href="http://redux.js.org/" rel="nofollow">Redux</a> and
+<a href="http://elm-lang.org/" rel="nofollow">Elm</a>, for example. Internally, Automerge is built upon Facebook's
+<a href="http://facebook.github.io/immutable-js/" rel="nofollow">Immutable.js</a>, but the Automerge API uses regular
+JavaScript objects (using
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze" rel="nofollow"><code>Object.freeze</code></a>
+to prevent accidental mutation).</li>
+<li><strong>Automatic merging</strong>. Automerge is a so-called Conflict-Free Replicated Data Type
+(<a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type" rel="nofollow">CRDT</a>), which allows
+concurrent changes on different devices to be merged automatically without requiring any central
+server. It is based on <a href="https://arxiv.org/abs/1608.03960" rel="nofollow">academic research on JSON CRDTs</a>, but
+the details of the algorithm in Automerge are different from the JSON CRDT paper, and we are
+planning to publish more detail about it in the future.</li>
+<li><strong>Fairly portable</strong>. We're not yet making an effort to support old platforms, but we have tested
+Automerge in Node.js, Chrome, Firefox, and <a href="https://electron.atom.io/" rel="nofollow">Electron</a>.</li>
+</ul>
+<h2><a href="#setup" aria-hidden="true" class="anchor" id="user-content-setup"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setup</h2>
+<p>If you're in Node.js, you can install Automerge through npm:</p>
+<pre><code>$ npm install --save automerge
+</code></pre>
+<p>Then you can import it with <code>require('automerge')</code> as in the example below.</p>
+<p>Otherwise, clone this repository, and then you can use the following commands:</p>
+<ul>
+<li><code>npm install</code> — installs dependencies.</li>
+<li><code>npm test</code> — runs the test suite in Node.</li>
+<li><code>npm run browsertest</code> — runs the test suite in web browsers.</li>
+<li><code>npm run webpack</code> — creates a bundled JS file <code>dist/automerge.js</code> for web browsers.
+It includes the dependencies and is set up so that you can load through a script tag.</li>
+</ul>
+<h2><a href="#example-usage" aria-hidden="true" class="anchor" id="user-content-example-usage"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example Usage</h2>
+<p>The following code samples give a quick overview of how to use Automerge.
+For an example of a real-life application built upon Automerge, check out
+<a href="https://github.com/automerge/trellis">Trellis</a>, a project management tool.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> This is how you load Automerge in Node. In a browser, simply including the</span>
+<span class="pl-c"><span class="pl-c">//</span> script tag will set up the Automerge object.</span>
+<span class="pl-k">const</span> <span class="pl-c1">Automerge</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>automerge<span class="pl-pds">'</span></span>)
+
+<span class="pl-c"><span class="pl-c">//</span> Let's say doc1 is the application state on device 1.</span>
+<span class="pl-c"><span class="pl-c">//</span> Further down we'll simulate a second device.</span>
+<span class="pl-k">let</span> doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">init</span>()
+
+<span class="pl-c"><span class="pl-c">//</span> That initial state is just an empty object: {}</span>
+<span class="pl-c"><span class="pl-c">//</span> Actually, it's got an automatically generated _objectId property, but we'll</span>
+<span class="pl-c"><span class="pl-c">//</span> leave out the object IDs from this example in order to make it easier to</span>
+<span class="pl-c"><span class="pl-c">//</span> read.</span>
+
+<span class="pl-c"><span class="pl-c">//</span> The doc1 object is immutable -- you cannot change it directly (if you try,</span>
+<span class="pl-c"><span class="pl-c">//</span> you'll either get an exception or your change will be silently ignored,</span>
+<span class="pl-c"><span class="pl-c">//</span> depending on your JavaScript engine). To change it, you need to call</span>
+<span class="pl-c"><span class="pl-c">//</span> Automerge.change() with a callback in which you can mutate the state. You</span>
+<span class="pl-c"><span class="pl-c">//</span> can also include a human-readable description of the change, like a commit</span>
+<span class="pl-c"><span class="pl-c">//</span> message, which is stored in the change history (see below).</span>
+
+doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(doc1, <span class="pl-s"><span class="pl-pds">'</span>Initialize card list<span class="pl-pds">'</span></span>, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-smi">cards</span> <span class="pl-k">=</span> []
+})
+
+<span class="pl-c"><span class="pl-c">//</span> { cards: [] }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> To change the state, you can use the regular JavaScript array mutation</span>
+<span class="pl-c"><span class="pl-c">//</span> methods such as push(). Internally, Automerge translates this mutable API</span>
+<span class="pl-c"><span class="pl-c">//</span> call into an update of the immutable state object. Note that we must pass in</span>
+<span class="pl-c"><span class="pl-c">//</span> doc1, and get back an updated object which we assign to the same variable</span>
+<span class="pl-c"><span class="pl-c">//</span> doc1. The original document object is not modified.</span>
+
+doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(doc1, <span class="pl-s"><span class="pl-pds">'</span>Add card<span class="pl-pds">'</span></span>, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-smi">cards</span>.<span class="pl-c1">push</span>({title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Rewrite everything in Clojure<span class="pl-pds">'</span></span>, done<span class="pl-k">:</span> <span class="pl-c1">false</span>})
+})
+
+<span class="pl-c"><span class="pl-c">//</span> { cards: [ { title: 'Rewrite everything in Clojure', done: false } ] }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> Automerge also defines an insertAt() method for inserting a new element at a particular</span>
+<span class="pl-c"><span class="pl-c">//</span> position in a list. You could equally well use splice(), if you prefer.</span>
+doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(doc1, <span class="pl-s"><span class="pl-pds">'</span>Add another card<span class="pl-pds">'</span></span>, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-smi">cards</span>.<span class="pl-en">insertAt</span>(<span class="pl-c1">0</span>, {title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Rewrite everything in Haskell<span class="pl-pds">'</span></span>, done<span class="pl-k">:</span> <span class="pl-c1">false</span>})
+})
+
+<span class="pl-c"><span class="pl-c">//</span> { cards:</span>
+<span class="pl-c"><span class="pl-c">//</span>    [ { title: 'Rewrite everything in Haskell', done: false },</span>
+<span class="pl-c"><span class="pl-c">//</span>      { title: 'Rewrite everything in Clojure', done: false } ] }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> Now let's simulate another device, whose application state is doc2. We</span>
+<span class="pl-c"><span class="pl-c">//</span> initialise it separately, and merge doc1 into it. After merging, doc2 has</span>
+<span class="pl-c"><span class="pl-c">//</span> a copy of all the cards in doc1.</span>
+
+<span class="pl-k">let</span> doc2 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">init</span>()
+doc2 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">merge</span>(doc2, doc1)
+
+<span class="pl-c"><span class="pl-c">//</span> Now make a change on device 1:</span>
+doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(doc1, <span class="pl-s"><span class="pl-pds">'</span>Mark card as done<span class="pl-pds">'</span></span>, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-smi">cards</span>[<span class="pl-c1">0</span>].<span class="pl-smi">done</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>
+})
+
+<span class="pl-c"><span class="pl-c">//</span> { cards:</span>
+<span class="pl-c"><span class="pl-c">//</span>    [ { title: 'Rewrite everything in Haskell', done: true },</span>
+<span class="pl-c"><span class="pl-c">//</span>      { title: 'Rewrite everything in Clojure', done: false } ] }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> And, unbeknownst to device 1, also make a change on device 2:</span>
+doc2 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(doc2, <span class="pl-s"><span class="pl-pds">'</span>Delete card<span class="pl-pds">'</span></span>, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-k">delete</span> <span class="pl-smi">doc</span>.<span class="pl-smi">cards</span>[<span class="pl-c1">1</span>]
+})
+
+<span class="pl-c"><span class="pl-c">//</span> { cards: [ { title: 'Rewrite everything in Haskell', done: false } ] }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> Now comes the moment of truth. Let's merge the changes from device 2 back</span>
+<span class="pl-c"><span class="pl-c">//</span> into device 1. You can also do the merge the other way round, and you'll get</span>
+<span class="pl-c"><span class="pl-c">//</span> the same result. The merged result remembers that 'Rewrite everything in</span>
+<span class="pl-c"><span class="pl-c">//</span> Haskell' was set to true, and that 'Rewrite everything in Clojure' was</span>
+<span class="pl-c"><span class="pl-c">//</span> deleted:</span>
+
+<span class="pl-k">let</span> finalDoc <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">merge</span>(doc1, doc2)
+
+<span class="pl-c"><span class="pl-c">//</span> { cards: [ { title: 'Rewrite everything in Haskell', done: true } ] }</span>
+
+<span class="pl-c"><span class="pl-c">//</span> As our final trick, we can inspect the change history. Automerge</span>
+<span class="pl-c"><span class="pl-c">//</span> automatically keeps track of every change, along with the "commit message"</span>
+<span class="pl-c"><span class="pl-c">//</span> that you passed to change(). When you query that history, it includes both</span>
+<span class="pl-c"><span class="pl-c">//</span> changes you made locally, and also changes that came from other devices. You</span>
+<span class="pl-c"><span class="pl-c">//</span> can also see a snapshot of the application state at any moment in time in the</span>
+<span class="pl-c"><span class="pl-c">//</span> past. For example, we can count how many cards there were at each point:</span>
+
+<span class="pl-smi">Automerge</span>.<span class="pl-en">getHistory</span>(finalDoc)
+  .<span class="pl-en">map</span>(<span class="pl-smi">state</span> <span class="pl-k">=&gt;</span> [<span class="pl-smi">state</span>.<span class="pl-smi">change</span>.<span class="pl-smi">message</span>, <span class="pl-smi">state</span>.<span class="pl-smi">snapshot</span>.<span class="pl-smi">cards</span>.<span class="pl-c1">length</span>])
+<span class="pl-c"><span class="pl-c">//</span> [ [ 'Initialize card list', 0 ],</span>
+<span class="pl-c"><span class="pl-c">//</span>   [ 'Add card', 1 ],</span>
+<span class="pl-c"><span class="pl-c">//</span>   [ 'Add another card', 2 ],</span>
+<span class="pl-c"><span class="pl-c">//</span>   [ 'Mark card as done', 2 ],</span>
+<span class="pl-c"><span class="pl-c">//</span>   [ 'Delete card', 1 ] ]</span></pre></div>
+<h2><a href="#documentation" aria-hidden="true" class="anchor" id="user-content-documentation"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Documentation</h2>
+<h3><a href="#automerge-document-lifecycle" aria-hidden="true" class="anchor" id="user-content-automerge-document-lifecycle"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Automerge document lifecycle</h3>
+<p><code>Automerge.init(actorId)</code> creates a new, empty Automerge document.
+You can optionally pass in an <code>actorId</code>, which is a string that uniquely identifies the current
+node; if you omit <code>actorId</code>, a random UUID is generated.</p>
+<p>If you pass in your own <code>actorId</code>, you must ensure that there can never be two different processes
+with the same actor ID. Even if you have two different processes running on the same machine, they
+must have distinct actor IDs. Unless you know what you are doing, it is recommended that you stick
+with the default, and let <code>actorId</code> be auto-generated.</p>
+<p><code>Automerge.save(doc)</code> serializes the state of Automerge document <code>doc</code> to a string, which you can
+write to disk. The string contains an encoding of all of the full change history of the document
+(a bit like a git repository).</p>
+<p><code>Automerge.load(string, actorId)</code> unserializes an Automerge document from a <code>string</code> that was
+produced by <code>Automerge.save()</code>. The <code>actorId</code> argument is optional, and allows you to specify
+a string that uniquely identifies the current node, like with <code>Automerge.init()</code>. Unless you know
+what you are doing, it is recommended that you omit the <code>actorId</code> argument.</p>
+<h3><a href="#manipulating-and-inspecting-state" aria-hidden="true" class="anchor" id="user-content-manipulating-and-inspecting-state"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Manipulating and inspecting state</h3>
+<p><code>Automerge.change(doc, message, callback)</code> enables you to modify an Automerge document <code>doc</code>.
+The <code>doc</code> object is not modified directly, since it is immutable; instead, <code>Automerge.change()</code>
+returns an updated copy of the document. The <code>callback</code> function is called with a mutable copy of
+<code>doc</code>, as shown below. The <code>message</code> argument allows you to attach arbitrary additional data to the
+change, which is not interpreted by Automerge, but saved as part of the change history. The <code>message</code>
+argument is optional; if you want to omit it, you can simply call <code>Automerge.change(doc, callback)</code>.</p>
+<p>Within the callback you can use standard JavaScript object manipulation operations to change the
+document:</p>
+<div class="highlight highlight-source-js"><pre>newDoc <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(currentDoc, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-smi">property</span>    <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>  <span class="pl-c"><span class="pl-c">//</span> assigns a string value to a property</span>
+  doc[<span class="pl-s"><span class="pl-pds">'</span>property<span class="pl-pds">'</span></span>] <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>  <span class="pl-c"><span class="pl-c">//</span> equivalent to the previous line</span>
+
+  <span class="pl-k">delete</span> doc[<span class="pl-s"><span class="pl-pds">'</span>property<span class="pl-pds">'</span></span>]     <span class="pl-c"><span class="pl-c">//</span> removes a property</span>
+
+  <span class="pl-smi">doc</span>.<span class="pl-smi">stringValue</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>  <span class="pl-c"><span class="pl-c">//</span> all JSON primitive datatypes are supported</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">numberValue</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">boolValue</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">nullValue</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>
+
+  <span class="pl-smi">doc</span>.<span class="pl-smi">nestedObject</span> <span class="pl-k">=</span> {}      <span class="pl-c"><span class="pl-c">//</span> creates a nested object</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">nestedObject</span>.<span class="pl-smi">property</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>
+
+  <span class="pl-c"><span class="pl-c">//</span> you can also assign an object that already has some properties:</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">otherObject</span> <span class="pl-k">=</span> {key<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>, number<span class="pl-k">:</span> <span class="pl-c1">42</span>}
+})</pre></div>
+<p>Object properties starting with an underscore cannot be used, as these are reserved by Automerge.</p>
+<p>The top-level Automerge document is always an object (i.e. a mapping from properties to values).
+You can use arrays (lists) by assigning a JavaScript array object to a property within a document.
+Then you can use most of the standard
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" rel="nofollow">Array functions</a>
+to manipulate the array:</p>
+<div class="highlight highlight-source-js"><pre>newDoc <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(currentDoc, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span> <span class="pl-k">=</span> []              <span class="pl-c"><span class="pl-c">//</span> creates an empty list object</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>.<span class="pl-c1">push</span>(<span class="pl-c1">2</span>, <span class="pl-c1">3</span>)        <span class="pl-c"><span class="pl-c">//</span> push() adds elements to the end</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>.<span class="pl-c1">unshift</span>(<span class="pl-c1">0</span>, <span class="pl-c1">1</span>)     <span class="pl-c"><span class="pl-c">//</span> unshift() adds elements at the beginning</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>[<span class="pl-c1">3</span>] <span class="pl-k">=</span> <span class="pl-c1">Math</span>.<span class="pl-c1">PI</span>      <span class="pl-c"><span class="pl-c">//</span> overwriting list element by index</span>
+  <span class="pl-c"><span class="pl-c">//</span> now doc.list is [0, 1, 2, 3.141592653589793]</span>
+
+  <span class="pl-c"><span class="pl-c">//</span> Looping over lists works as you'd expect:</span>
+  <span class="pl-k">for</span> (<span class="pl-k">let</span> i <span class="pl-k">=</span> <span class="pl-c1">0</span>; i <span class="pl-k">&lt;</span> <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>.<span class="pl-c1">length</span>; i<span class="pl-k">++</span>) <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>[i] <span class="pl-k">*=</span> <span class="pl-c1">2</span>
+  <span class="pl-c"><span class="pl-c">//</span> now doc.list is [0, 2, 4, 6.283185307179586]</span>
+
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>.<span class="pl-en">insertAt</span>(<span class="pl-c1">1</span>, <span class="pl-s"><span class="pl-pds">'</span>hello<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>world<span class="pl-pds">'</span></span>)  <span class="pl-c"><span class="pl-c">//</span> inserts elements at given index</span>
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>.<span class="pl-en">deleteAt</span>(<span class="pl-c1">5</span>)                    <span class="pl-c"><span class="pl-c">//</span> deletes element at given index</span>
+  <span class="pl-c"><span class="pl-c">//</span> now doc.list is [0, 'hello', 'world', 2, 4]</span>
+
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>.<span class="pl-c1">splice</span>(<span class="pl-c1">2</span>, <span class="pl-c1">2</span>, <span class="pl-s"><span class="pl-pds">'</span>automerge<span class="pl-pds">'</span></span>)      <span class="pl-c"><span class="pl-c">//</span> like JS standard Array.splice()</span>
+  <span class="pl-c"><span class="pl-c">//</span> now doc.list is [0, 'hello', 'automerge', 4]</span>
+
+  <span class="pl-smi">doc</span>.<span class="pl-smi">list</span>[<span class="pl-c1">4</span>] <span class="pl-k">=</span> {key<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>value<span class="pl-pds">'</span></span>}  <span class="pl-c"><span class="pl-c">//</span> objects can be nested inside lists as well</span>
+})</pre></div>
+<p>The <code>newDoc</code> returned by <code>Automerge.change()</code> is a regular JavaScript object containing all the
+edits you made in the callback. Any parts of the document that you didn't change are carried over
+unmodified. The only special things about it are:</p>
+<ul>
+<li>All objects in the document are made immutable using
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze" rel="nofollow"><code>Object.freeze()</code></a>,
+to ensure you don't accidentally modify them outside of an <code>Automerge.change()</code> callback.</li>
+<li>Every object and every array has an <code>_objectId</code> property, which is used by Automerge to track
+which object is which.</li>
+<li>Objects also have a <code>_conflicts</code> property, which is used when several users make conflicting
+changes at the same time (see below).</li>
+</ul>
+<h3><a href="#text-editing-support" aria-hidden="true" class="anchor" id="user-content-text-editing-support"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Text editing support</h3>
+<p><code>Automerge.Text</code> provides experimental support for collaborative text editing.
+Under the hood, text is represented as a list of characters, which is edited by inserting or
+deleting individual characters. Compared to using a regular JavaScript array,
+<code>Automerge.Text</code> offers better performance.</p>
+<p>(Side note: technically, text should be represented as a list of
+<a href="http://www.unicode.org/reports/tr29/" rel="nofollow">Unicode <em>grapheme clusters</em></a>.
+What the user thinks of as a "character" may actually be a series of several Unicode code points,
+including accents, diacritics, and other combining marks. A grapheme cluster is the smallest
+editable unit of text: that is, the thing that gets deleted if you press the delete key once, or the
+thing that the cursor skips over if you press the right-arrow key once. Emoji make a good test case,
+since many emoji consist of a sequence of several Unicode code points — for example, the
+<a href="http://www.unicode.org/reports/tr51/" rel="nofollow">skintone modifier</a> is a combining mark.)</p>
+<p>You can create a Text object inside a change callback.
+Then you can use <code>insertAt()</code> and <code>deleteAt()</code> to insert and delete characters (same API as for
+list modifications, shown above):</p>
+<div class="highlight highlight-source-js"><pre>newDoc <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(currentDoc, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-smi">doc</span>.<span class="pl-c1">text</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Automerge.Text</span>()
+  <span class="pl-smi">doc</span>.<span class="pl-c1">text</span>.<span class="pl-en">insertAt</span>(<span class="pl-c1">0</span>, <span class="pl-s"><span class="pl-pds">'</span>h<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>e<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>l<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>l<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>o<span class="pl-pds">'</span></span>)
+  <span class="pl-smi">doc</span>.<span class="pl-c1">text</span>.<span class="pl-en">deleteAt</span>(<span class="pl-c1">0</span>)
+  <span class="pl-smi">doc</span>.<span class="pl-c1">text</span>.<span class="pl-en">insertAt</span>(<span class="pl-c1">0</span>, <span class="pl-s"><span class="pl-pds">'</span>H<span class="pl-pds">'</span></span>)
+})</pre></div>
+<p>To inspect a text object and render it, you can use the following methods
+(outside of a change callback):</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">newDoc</span>.<span class="pl-c1">text</span>.<span class="pl-c1">length</span>   <span class="pl-c"><span class="pl-c">//</span> returns 5, the number of characters</span>
+<span class="pl-smi">newDoc</span>.<span class="pl-c1">text</span>.<span class="pl-c1">get</span>(<span class="pl-c1">0</span>)   <span class="pl-c"><span class="pl-c">//</span> returns 'H', the 0th character in the text</span>
+<span class="pl-smi">newDoc</span>.<span class="pl-c1">text</span>.<span class="pl-c1">join</span>(<span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>) <span class="pl-c"><span class="pl-c">//</span> returns 'Hello', the concatenation of all characters</span>
+<span class="pl-k">for</span> (<span class="pl-k">let</span> char <span class="pl-k">of</span> <span class="pl-smi">newDoc</span>.<span class="pl-c1">text</span>) <span class="pl-en">console</span>.<span class="pl-c1">log</span>(char) <span class="pl-c"><span class="pl-c">//</span> iterates over all characters</span></pre></div>
+<h3><a href="#sending-and-receiving-changes" aria-hidden="true" class="anchor" id="user-content-sending-and-receiving-changes"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sending and receiving changes</h3>
+<p>The Automerge library itself is agnostic to the network layer — that is, you can use whatever
+communication mechanism you like to get changes from one node to another. There are currently
+a few options, with more under development:</p>
+<ul>
+<li>Use <code>Automerge.getChanges()</code> and <code>Automerge.applyChanges()</code> to manually capture changes on one
+node and apply them on another.</li>
+<li>Use <a href="https://github.com/automerge/automerge/blob/master/src/connection.js"><code>Automerge.Connection</code></a>,
+an implementation of a protocol that syncs up two nodes by determining missing changes and
+sending them to each other.</li>
+<li>Use <a href="https://github.com/automerge/mpl">MPL</a>, which runs the <code>Automerge.Connection</code> protocol
+over WebRTC.</li>
+</ul>
+<p>The <code>getChanges()/applyChanges()</code> API works as follows:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">//</span> On one node</span>
+newDoc <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(currentDoc, <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> {
+  <span class="pl-c"><span class="pl-c">//</span> make arbitrary change to the document</span>
+})
+val changes <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">getChanges</span>(currentDoc, newDoc)
+<span class="pl-smi">network</span>.<span class="pl-en">broadcast</span>(<span class="pl-c1">JSON</span>.<span class="pl-c1">stringify</span>(changes))
+
+<span class="pl-c"><span class="pl-c">//</span> On another node</span>
+val changes <span class="pl-k">=</span> <span class="pl-c1">JSON</span>.<span class="pl-c1">parse</span>(<span class="pl-smi">network</span>.<span class="pl-en">receive</span>())
+newDoc <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">applyChanges</span>(currentDoc, changes)</pre></div>
+<p>Note that <code>Automerge.getChanges(oldDoc, newDoc)</code> takes two documents as arguments: an old state
+and a new state. It then returns a list of all the changes that were made in <code>newDoc</code> since
+<code>oldDoc</code>. If you want a list of all the changes ever made in <code>newDoc</code>, you can call
+<code>Automerge.getChanges(Automerge.init(), newDoc)</code>.</p>
+<p>The counterpart, <code>Automerge.applyChanges(oldDoc, changes)</code> applies the list of <code>changes</code> to the
+given document, and returns a new document with those changes applied. Automerge guarantees that
+whenever any two documents have applied the same set of changes — even if the changes were
+applied in a different order — then those two documents are equal. That property is called
+<em>convergence</em>, and it is the essence of what Automerge is all about.</p>
+<p><code>Automerge.merge(doc1, doc2)</code> is a related function that is useful for testing. It looks for any
+changes that appear in <code>doc2</code> but not in <code>doc1</code>, and applies them to <code>doc1</code>, returning an updated
+version of <code>doc1</code>. This function requires that <code>doc1</code> and <code>doc2</code> have different actor IDs (that is,
+they originated from different calls to <code>Automerge.init()</code>). See the Example Usage section above
+for an example using <code>Automerge.merge()</code>.</p>
+<h3><a href="#conflicting-changes" aria-hidden="true" class="anchor" id="user-content-conflicting-changes"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conflicting changes</h3>
+<p>Automerge allows different nodes to independently make arbitrary changes to their respective copies
+of a document. In most cases, those changes can be combined without any trouble. For example, if
+users modify two different objects, or two different properties in the same object, then it is
+straightforward to combine those changes.</p>
+<p>If users concurrently insert or delete items in a list (or characters in a text document), Automerge
+preserves all the insertions and deletions. If two users concurrently insert at the same position,
+Automerge will arbitrarily place one of the insertions first and the other second, while ensuring
+that the final order is the same on all nodes.</p>
+<p>The only case Automerge cannot handle automatically, because there is no well-defined resolution,
+is when users concurrently update the same property in the same object (or, similarly, the same
+index in the same list). In this case, Automerge arbitrarily picks one of the concurrently written
+values as the "winner":</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(<span class="pl-smi">Automerge</span>.<span class="pl-en">init</span>(), <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> { <span class="pl-smi">doc</span>.<span class="pl-c1">x</span> <span class="pl-k">=</span> <span class="pl-c1">1</span> })
+<span class="pl-k">let</span> doc2 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">change</span>(<span class="pl-smi">Automerge</span>.<span class="pl-en">init</span>(), <span class="pl-smi">doc</span> <span class="pl-k">=&gt;</span> { <span class="pl-smi">doc</span>.<span class="pl-c1">x</span> <span class="pl-k">=</span> <span class="pl-c1">2</span> })
+doc1 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">merge</span>(doc1, doc2)
+doc2 <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">merge</span>(doc2, doc1)
+<span class="pl-c"><span class="pl-c">//</span> Now, doc1 might be either {x: 1} or {x: 2} -- the choice is random.</span>
+<span class="pl-c"><span class="pl-c">//</span> However, doc2 will be the same, whichever value is chosen as winner.</span></pre></div>
+<p>Although only one of the concurrently written values shows up in the object, the other values are
+not lost. They are merely relegated to a <code>_conflicts</code> object:</p>
+<div class="highlight highlight-source-js"><pre>doc1 <span class="pl-c"><span class="pl-c">//</span> {x: 2}</span>
+doc2 <span class="pl-c"><span class="pl-c">//</span> {x: 2}</span>
+<span class="pl-smi">doc1</span>.<span class="pl-smi">_conflicts</span> <span class="pl-c"><span class="pl-c">//</span> {x: {'0506162a-ac6e-4567-bc16-a12618b71940': 1}}</span>
+<span class="pl-smi">doc2</span>.<span class="pl-smi">_conflicts</span> <span class="pl-c"><span class="pl-c">//</span> {x: {'0506162a-ac6e-4567-bc16-a12618b71940': 1}}</span></pre></div>
+<p>Here, the <code>_conflicts</code> object contains the property <code>x</code>, which matches the name of the property
+on which the concurrent assignments happened. The nested key <code>0506162a-ac6e-4567-bc16-a12618b71940</code>
+is the actor ID that performed the assignment, and the associated value is the value it assigned
+to the property <code>x</code>. You might use the information in the <code>_conflicts</code> object to show the conflict
+in the user interface.</p>
+<p>The next time you assign to a conflicting property, the conflict is automatically considered to
+be resolved, and the property disappears from the <code>_conflicts</code> object.</p>
+<h3><a href="#examining-document-history" aria-hidden="true" class="anchor" id="user-content-examining-document-history"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Examining document history</h3>
+<p>An Automerge document internally saves a complete history of all the changes that were ever made
+to it. This enables a nice feature: looking at the document state at past points in time, a.k.a.
+<em>time travel!</em></p>
+<p><code>Automerge.getHistory(doc)</code> returns a list of all edits made to a document. Each edit is an object
+with two properties: <code>change</code> is the internal representation of the change (in the same form as
+<code>Automerge.getChanges()</code> returns), and <code>snapshot</code> is the state of the document at the moment just
+after that change had been applied.</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">Automerge</span>.<span class="pl-en">getHistory</span>(doc2)
+<span class="pl-c"><span class="pl-c">//</span> [ { change: { message: 'Set x to 1', ... }, snapshot: { x: 1 } },</span>
+<span class="pl-c"><span class="pl-c">//</span>   { change: { message: 'Set x to 2', ... }, snapshot: { x: 2 } } ]</span></pre></div>
+<p>Within the change object, the property <code>message</code> is set to the free-form "commit message" that
+was passed in as second argument to <code>Automerge.change()</code> (if any). The rest of the change object
+is specific to Automerge implementation details, and normally shouldn't need to be interpreted.</p>
+<p>If you want to find out what actually changed in a particular edit, rather than inspecting the
+change object, it is better to use <code>Automerge.diff(oldDoc, newDoc)</code>. This function returns a list
+of edits that were made in document <code>newDoc</code> since its prior version <code>oldDoc</code>. You can pass in
+snapshots returned by <code>Automerge.getHistory()</code> in order to determine differences between historic
+versions.</p>
+<p>The data returned by <code>Automerge.diff()</code> has the following form:</p>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">let</span> history <span class="pl-k">=</span> <span class="pl-smi">Automerge</span>.<span class="pl-en">getHistory</span>(doc2)
+<span class="pl-smi">Automerge</span>.<span class="pl-en">diff</span>(history[<span class="pl-c1">2</span>].<span class="pl-smi">snapshot</span>, doc2) <span class="pl-c"><span class="pl-c">//</span> get all changes since history[2]</span>
+<span class="pl-c"><span class="pl-c">//</span> [ { action: 'set', type: 'map', obj: '...', key: 'x', value: 1 },</span>
+<span class="pl-c"><span class="pl-c">//</span>   { action: 'set', type: 'map', obj: '...', key: 'x', value: 2 } ]</span></pre></div>
+<p>In the objects returned by <code>Automerge.diff()</code>, <code>obj</code> indicates the object ID of the object being
+edited (matching its <code>_objectId</code> property), and <code>type</code> indicates whether that object is a <code>map</code>,
+<code>list</code>, or <code>text</code>.</p>
+<p>The available values for <code>action</code> depend on the type of object. For <code>type: 'map'</code>, the possible
+actions are:</p>
+<ul>
+<li><code>action: 'set'</code>: Then the property <code>key</code> is the name of the property being updated. If the value
+assigned to the property is a primitive (string, number, boolean, null), then <code>value</code> contains
+that value. If the assigned value is an object (map, list, or text), then <code>value</code> contains the
+<code>_objectId</code> of that object, and additionally the property <code>link: true</code> is set. Moreover, if this
+assignment caused conflicts, then the conflicting values are additionally contained in a
+<code>conflicts</code> property.</li>
+<li><code>action: 'remove'</code>: Then the property <code>key</code> is the name of the property being removed.</li>
+</ul>
+<p>For <code>type: 'list'</code> and <code>type: 'text'</code>, the possible actions are:</p>
+<ul>
+<li><code>action: 'insert'</code>: Then the property <code>index</code> contains the list index at which a new element is
+being inserted, and <code>value</code> contains the value inserted there. If the inserted value is an
+object, the <code>value</code> property contains its <code>_objectId</code>, and the property <code>link: true</code> is set.</li>
+<li><code>action: 'set'</code>: Then the property <code>index</code> contains the list index to which a new value is being
+assigned, and <code>value</code> contains that value. If the assigned value is an object, the <code>value</code>
+property contains its <code>_objectId</code>, and the property <code>link: true</code> is set.</li>
+<li><code>action: 'remove'</code>: Then the property <code>index</code> contains the list index that is being removed from
+the list.</li>
+</ul>
+<h2><a href="#caveats" aria-hidden="true" class="anchor" id="user-content-caveats"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Caveats</h2>
+<p>The project currently has a number of limitations that you should be aware of:</p>
+<ul>
+<li>No integrity checking: if a buggy (or malicious) device makes corrupted edits, it can cause
+the application state on other devices to become corrupted or go out of sync.</li>
+<li>No security: there is currently no encryption, authentication, or access control.</li>
+<li>Small number of collaborators: Automerge is designed for small-group collaborations. While there
+is no hard limit on the number of devices that can update a document, performance will degrade
+if you go beyond, say, 100 devices or so.</li>
+<li>...and more, see the <a href="https://github.com/automerge/automerge/issues">open issues</a>.</li>
+</ul>
+<h2><a href="#meta" aria-hidden="true" class="anchor" id="user-content-meta"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Meta</h2>
+<p>Copyright 2017, Ink &amp; Switch LLC, and University of Cambridge.
+Released under the terms of the MIT license (see <code>LICENSE</code>).</p>
+<p>Created by
+<a href="http://martin.kleppmann.com/" rel="nofollow">Martin Kleppmann</a>,
+Orion Henry,
+<a href="https://twitter.com/pvh" rel="nofollow">Peter van Hardenberg</a>,
+<a href="https://www.linkedin.com/in/choxi/" rel="nofollow">Roshan Choxi</a>, and
+<a href="http://about.adamwiggins.com/" rel="nofollow">Adam Wiggins</a>.</p>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.21271s from unicorn-47420481-8hlls">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-bea37eecc124.js" type="application/javascript"></script>
+    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-8eabc368bf2e.js" type="application/javascript"></script>
+    
+    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-857f3c501c8f.js" type="application/javascript"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+  </body>
+</html>
+
